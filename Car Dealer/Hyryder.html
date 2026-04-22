@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyryder</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+body{
+ margin: 0;
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgb(78, 78, 78));
+ background-attachment: fixed;
+}
+html{scroll-behavior: smooth;}
+
+body::before {
+ content: "";
+ position: fixed;
+ width: 200%;
+ height: 200%;
+ background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+ background-size: 50px 50px;
+ animation: moveBg 60s linear infinite;
+ z-index: -1;
+}
+
+@keyframes moveBg {
+ from { transform: translate(0,0); }
+ to { transform: translate(-500px,-500px); }
+}
+
+.btn:hover{
+ transform: translateY(-3px);
+ transition: 0.3s ease;
+}
+
+h1,h2,h3,h4,h5,p{cursor:default;}
+
+#Car-title{
+ font-weight: bold;
+ color: #ffc107;
+ text-shadow: 1px 1px 2px rgba(0,0,0,0.5),
+ -1px -1px 2px rgba(0,0,0,0.5),
+ 1px -1px 2px rgba(0,0,0,0.5),
+ -1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#Main-title{
+ display: flex;
+ justify-content: start;
+ margin-top: 1rem;
+ padding-left: 2em;
+ font-weight:500;
+}
+
+#Sub-title{
+ display: flex;
+ justify-content: start;
+ padding-left: 2.5em;
+ font-weight:500;
+ color: rgba(255, 255, 255, 0.911);
+}
+
+#Car-text{
+ display: flex;
+ justify-content: start;
+ text-align: start;
+ margin-top: 1%;
+ padding-left: 3em;
+ font-weight: 400;
+ color: rgba(255, 255, 255, 0.849);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="d-flex justify-content-between align-items-center px-5"
+style="height: 7rem; background: black; backdrop-filter: blur(6px);">
+<h4 class="m-0 fw-bold fs-2 text-light">Car-e Port</h4>
+<img src="Car-e Port Logo.jpg" style="height: 120px; width: 150px;" class="rounded-circle">
+
+<ul class="nav align-items-center">
+<li class="nav-item">
+<a class="nav-link text-light" href="../About pg/About.html">About</a>
+</li>
+<li class="nav-item">
+<a href="../Login pg/Login.html">
+<button class="btn btn-warning ms-2">Login</button>
+</a>
+</li>
+</ul>
+</header>
+
+<!-- Main -->
+ 
+<main>
+
+          <a href="Hyryder.html#Top"
+        class="btn btn-outline-light position-fixed d-flex align-items-center justify-content-center"
+        style="top: 19em; right: 2em; border-radius: 30px; height: 25px; width: 10px;">
+        ↑</a>
+
+        <a href="Toyota.html#Car-bg-clr"
+        class="btn btn-outline-light position-fixed d-flex align-items-center justify-content-center"
+        style="top: 22em; right: 2em; border-radius: 30px; height: 25px; width: 10px;">
+        ←</a>
+
+<div class="container d-flex justify-content-center align-items-center"
+style="min-height: calc(100vh - 7rem);">
+
+<div class="card custom-card shadow-lg"
+style="background-color: rgba(245, 245, 245, 0.301); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.05);">
+
+<img src="Urban Cruiser Hyryder wht.png"
+class="card-img-top pt-5"
+alt="Hyryder"
+style="height: 400px;">
+
+
+<div class="d-flex justify-content-evenly">
+<div class="p-3 flex-fill">
+<button onclick="location.href='#carSpecs'"
+class="p-2 w-100 text-light"
+style="border: 2px solid white; border-radius: 10px; background-color: transparent;">
+Specs
+</button>
+</div>
+
+<div class="p-3 flex-fill">
+<button onclick="location.href='#myForm'"
+class="p-2 w-100 text-light"
+style="border: 2px solid white; border-radius: 10px; background-color:transparent">
+Book
+</button>
+</div>
+</div>
+
+<!-- Specs -->
+<div class="card-body text-center text-light" id="carSpecs">
+
+<h2 id="Car-title">Hyryder</h2>
+
+<h4 id="Main-title">Engine & Performance</h4>
+
+<h5 id="Sub-title" class="d-flex mt-4">1.5L Mild-Hybrid Petrol</h5>
+<p id="Car-text">* ~103 bhp, 137 Nm <br> * 5MT / 6AT</p>
+
+<h5 id="Sub-title">1.5L Strong Hybrid (Petrol + Electric)</h5>
+<p id="Car-text">* Combined ~114–116 bhp <br> * 2e-CVT automatic <br> * Can run in EV mode in city</p>
+
+<h5 id="Sub-title">1.5L CNG option</h5>
+<p id="Car-text">* ~88 bhp, 122 Nm</p>
+
+<h5 id="Sub-title">Drive options:</h5>
+<p id="Car-text">* FWD (standard) <br> * AWD (available in mild-hybrid)</p>
+
+<h4 id="Main-title" class="mt-5">Mileage</h4>
+<p id="Car-text">
+* Mild-hybrid petrol: ~19–21 km/l <br>
+* Strong hybrid: ~27–28 km/l (best in segment) <br>
+* CNG: ~26 km/kg
+</p>
+
+<h4 id="Main-title" class="mt-5">Dimensions & Build</h4>
+<p id="Car-text">
+* Length: 4365 mm <br>
+* Width: 1795 mm <br>
+* Wheelbase: 2600 mm <br>
+* Ground clearance: ~210 mm <br>
+* Seating: 5-seater <br>
+* Boot space: ~265–373 L (less in hybrid)
+</p>
+
+<h4 id="Main-title" class="mt-5">Interior & Features</h4>
+
+<h5 id="Sub-title" class="d-flex mt-4">Infotainment</h5>
+<p id="Car-text">* 9–10.1 inch touchscreen <br> * Android Auto & Apple CarPlay</p>
+
+<h5 id="Sub-title">Comfort</h5>
+<p id="Car-text">* Ventilated seats (top variant) <br> * Panoramic sunroof <br> * Ambient lighting</p>
+
+<h5 id="Sub-title">Comfort features:</h5>
+<p id="Car-text">* Ventilated seats (top variants) <br> * Dual-zone climate control <br> * Powered driver seat</p>
+
+<h5 id="Sub-title">Tech</h5>
+<p id="Car-text">* Head-up display <br> * 360° camera <br> * Wireless charging</p>
+
+<h4 id="Main-title" class="mt-5">Safety</h4>
+<p id="Car-text">
+* 6 airbags <br>
+* ABS + EBD <br>
+* ESP (stability control) <br>
+* Hill hold assist <br>
+* 360° camera <br>
+* TPMS
+</p>
+
+<h4 id="Main-title" class="mt-5">Price</h4>
+
+<h5 id="Sub-title" class="d-flex mt-4">Indian Standard</h5>
+<p id="Car-text">* ₹11 lakh – ₹20 lakh (ex-showroom)</p>
+
+<h5 id="Sub-title" class="d-flex mt-4">At Car-e Port</h5>
+<p id="Car-text">* ₹8 lakh – ₹17+ lakh (on-road)</p>
+
+</div>
+
+<!-- Form -->
+<div class="card-body bg-dark">
+
+<div id="errorMsg" style="color:red; text-align:center; margin-top:10px;"></div>
+
+<form id="myForm">
+
+<div class="mt-5 d-flex justify-content-center">
+<input type="text" class="form-control w-75" placeholder="Name" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<input type="date" class="form-control w-75" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<input type="text" class="form-control w-75" placeholder="Occupation" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<input type="number" class="form-control w-75" placeholder="Annual Income" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<input type="email" class="form-control w-75" placeholder="Email" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<input type="tel" class="form-control w-75" placeholder="Phone Number" required>
+</div>
+
+<div class="mt-3 d-flex justify-content-center">
+<textarea rows="3" class="form-control w-75" placeholder="Address" required></textarea>
+</div>
+
+<div class="mt-4 text-center">
+<button type="submit" class="btn btn-primary w-75">Submit</button>
+</div>
+
+</form>
+</div>
+
+</div>
+</div>
+</main>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+event.preventDefault();
+
+let inputs = this.querySelectorAll("input, textarea");
+let errorMsg = document.getElementById("errorMsg");
+errorMsg.innerText = "";
+
+for (let input of inputs) {
+ if (input.value.trim() === "") {
+  errorMsg.innerText = "This field is required";
+  input.focus();
+  return;
+ }
+}
+
+alert("Form submitted successfully!");
+this.submit();
+});
+</script>
+
+</body>
+</html>
