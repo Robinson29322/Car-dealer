@@ -85,40 +85,44 @@ h1,h2,h3, h4, h5, p{cursor:default;}
 @media (max-width: 768px){
 
     /* Header */
-  header{
-    height: 5.5rem !important;
-    padding: 0 10px !important;
-    position: relative;
+  header .btn-warning {
+    font-size: 0.9rem;
+    padding: 6px 18px;
   }
 
-  header ul{
-    margin-left: auto;
-    z-index: 2;
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+  #Brand-name {
+    font-size: 1.5rem !important;
+    margin: 0;
+    text-align: center;
   }
 
-  #Brand-name{
-    font-size: 1rem !important;
-    z-index: 2;
+  .nav-link {
+    font-size: 1rem;
+    padding: 5px 0;
   }
 
-  .nav-link{
-    font-size: 0.75rem;
-    padding: 0.5rem 0.4rem;
-  }
-
-  header img{
-    position: absolute;
-    left: 48%;
-    transform: translateX(-50%);
-    width: 90px !important;
-    height: 70px !important;
+  header img {
+    position: static !important;
+    transform: none !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
   }
 
   header .btn-warning{
     font-size: 0.75rem;
     padding: 3px 8px;
   }
-
   /* Footer */
   footer{
     text-align: left;
